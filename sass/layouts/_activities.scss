@@ -1,0 +1,38 @@
+.activities__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+  
+.activities__item {
+  flex-basis: calc((100% - 30px * 3) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+  position: relative;
+  }
+  
+.activities__name {
+  text-transform: uppercase;
+  color: var(--alt-text-cl);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+ 
+.activities--gradient {
+  background-image: linear-gradient(
+    to top,
+    var(--act-grdnt),
+    var(--act-grdnt));
+  width: 370px;
+  height: 70px;
+
+  position: absolute;
+  bottom: 0;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

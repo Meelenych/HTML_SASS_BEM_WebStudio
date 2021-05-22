@@ -1,0 +1,42 @@
+/*Соцсети*/
+.connect {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.connect__call {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.14;
+  color: var(--alt-text-cl);
+  margin-bottom: 20px;
+  display: flex;
+  margin-top: 12px;
+}
+ 
+.connect__list {
+  display: inline-flex;
+}
+    
+.connect__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: var(--connect-cl);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-cl);
+
+    @extend %background-effects;
+  }
+}
+
+.connect__social {
+  fill: var(--alt-text-cl);
+}
