@@ -1,7 +1,13 @@
 /*Подписка*/
 .subscribe {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   margin-left: 93px;
+
+  @media screen and (max-width: 767px) {
+  width: 100%;
+  margin: 0;
+  }
 }
   
 .subscribe > input,
@@ -10,6 +16,16 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;    
+  }
+  @media screen and (min-width: 768px) {
+   
+  }
+  @media screen and (min-width: 1200px) {
+
+  }
 }
   
 .subscribe__email {
@@ -25,6 +41,12 @@
   letter-spacing: 0.03em;
   padding-left: 16px;
   margin-right: 12px;
+
+  @media screen and (max-width: 767px) {
+   margin-bottom: 20px;
+    
+  }
+
 }
 
 .subscribe-txt {

@@ -43,13 +43,22 @@
 .subscribe__button {
   color: var(--alt-text-cl);
   background-color: var(--accent-cl);
-  min-height: 50px;
-  min-width: 200px;
+  height: 50px;
+  width: 200px;
+
+  box-sizing: border-box;
+
   fill: var(--alt-text-cl);
 
   &:hover {
     animation: scale 1.5s ease-in-out;
   }
+
+  @media screen and (max-width: 767px) {
+  margin-bottom: 60px;
+    
+  }
+
 }
 
 @keyframes scale {
@@ -97,6 +106,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  
 
   & .cross-icon {
     display: none;
