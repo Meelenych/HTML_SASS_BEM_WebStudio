@@ -5,7 +5,21 @@
     var(--hero-grdnt),
     var(--hero-grdnt)),
     url("../images/herobg.jpg");
-   max-width: 100%;
+  max-width: 100%;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient(
+      to bottom,
+      var(--hero-grdnt),
+      var(--hero-grdnt)),
+      url("../images/mobile/herobg.jpg");
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ 
+  }
+
 }

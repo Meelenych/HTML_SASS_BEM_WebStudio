@@ -8,6 +8,8 @@
   background-color: rgba(0, 0, 0, 0.2);
   
   @extend %background-effects;
+
+  overflow-y:scroll;
 }
   
 .modal {

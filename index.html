@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
 
-<!-- Шрифты-->
+    <!-- Шрифты-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
-    /> 
+    />
 
     <link
       rel="stylesheet"
@@ -28,6 +28,8 @@
           <a class="header__logo link logo" href="index.html"
             >Web<span class="studio-black logo">Studio</span></a
           >
+         
+          <!--Меню навигации-->
           <ul class="menu list">
             <li class="menu__item">
               <a class="link current" href="index.html">Студия</a>
@@ -40,32 +42,57 @@
             </li>
           </ul>
         </nav>
+          <!--Контакты в хедере-->
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a class="contacts__link link" href="mailto:info@devstudio.com">
+              <svg class="contacts__svg" width="16px" height="12px">
+                <use href="./images/icons.svg#icon-envelope-hover"></use></svg
+              >info@devstudio.com
+            </a>
+          </li>
 
-          <ul class="contacts list">          
-            <li class="contacts__item">
-              <a class="contacts__link link" href="mailto:info@devstudio.com">
-                <svg
-                  class="contacts__svg"
-                  width="16px"
-                  height="12px"
-                >
-                  <use href="./images/icons.svg#icon-envelope-hover"></use>
-                </svg>info@devstudio.com
-              </a>           
-            </li>
+          <li class="contacts__item">
+            <a class="contacts__link link" href="tel:+380961111111">
+              <svg class="contacts__svg" width="10px" height="16px">
+                <use href="./images/icons.svg#icon-phone"></use></svg
+              >+38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+          <!--Кнопка мобильного меню-->
+          <button 
+            type="button" 
+            class="mob-btn" 
+            aria-expanded="false"
+            aria-controls="mob-menu"
+            data-menu-button>
 
-            <li class="contacts__item">        
-              <a class="contacts__link link" href="tel:+380961111111">
-                <svg
-                  class="contacts__svg"
-                  width="10px"
-                  height="16px"
-                >
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>+38 096 111 11 11
-              </a>            
-            </li>
-          </ul>
+            <svg
+              width="40"
+              height="40"
+              aria-label="Кнопка мобильного меню"
+              class="cross-icon"
+            >
+              <use href="./images/icons.svg#cross"></use>
+            </svg>
+
+            <svg
+              width="40"
+              height="40"
+              aria-label="Кнопка мобильного меню"
+              class="burger-icon"
+            >
+              <use href="./images/icons.svg#burger"></use>
+            </svg>
+          </button>
+          <!--Контент мобильного меню-->
+          <div 
+            class="mob-menu-content" 
+            id="mob-menu" 
+            data-menu>
+            Контент
+          </div>
       </div>
     </header>
     <!--Мэйн-->
@@ -86,7 +113,7 @@
       <section class="advantages">
         <div class="container">
           <h2 class="vanish">Наши преимущества</h2>
-          <ul class="advantages__list list ">
+          <ul class="advantages__list list">
             <li class="advantages__card">
               <div class="advantages__svg-tile">
                 <svg width="70px" height="70px">
@@ -139,7 +166,7 @@
         </div>
       </section>
       <!--Чем занимаемся-->
-      <section class="activities">
+      <!-- <section class="activities">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="activities__list list">
@@ -167,7 +194,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--Команда-->
       <section class="team">
         <div class="container">
@@ -195,7 +222,11 @@
                       class="team__contacts__link link"
                       aria-label="instagram"
                     >
-                      <svg class="team__contacts__social" width="20px" height="20px">
+                      <svg
+                        class="team__contacts__social"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
@@ -209,7 +240,11 @@
                       class="team__contacts__link link"
                       aria-label="twitter"
                     >
-                      <svg class="team__contacts__social" width="20px" height="20px">
+                      <svg
+                        class="team__contacts__social"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
@@ -223,7 +258,11 @@
                       class="team__contacts__link link"
                       aria-label="facebook"
                     >
-                      <svg class="team__contacts__social" width="20px" height="20px">
+                      <svg
+                        class="team__contacts__social"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
@@ -237,7 +276,11 @@
                       class="team__contacts__link link"
                       aria-label="linkedin"
                     >
-                      <svg class="team__contacts__social" width="20px" height="20px">
+                      <svg
+                        class="team__contacts__social"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -267,7 +310,11 @@
                       class="team__contacts__link link"
                       aria-label="instagram"
                     >
-                      <svg class="team__contacts__social" width="20px" height="20px">
+                      <svg
+                        class="team__contacts__social"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
@@ -281,7 +328,11 @@
                       class="team__contacts__link link"
                       aria-label="twitter"
                     >
-                      <svg class="team__contacts__social" width="20px" height="20px">
+                      <svg
+                        class="team__contacts__social"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
@@ -295,7 +346,11 @@
                       class="team__contacts__link link"
                       aria-label="facebook"
                     >
-                      <svg class="team__contacts__social" width="20px" height="20px">
+                      <svg
+                        class="team__contacts__social"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
@@ -309,7 +364,11 @@
                       class="team__contacts__link link"
                       aria-label="linkedin"
                     >
-                      <svg class="team__contacts__social" width="20px" height="20px">
+                      <svg
+                        class="team__contacts__social"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -339,7 +398,11 @@
                       class="team__contacts__link link"
                       aria-label="instagram"
                     >
-                      <svg class="team__contacts__social" width="20px" height="20px">
+                      <svg
+                        class="team__contacts__social"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
@@ -353,7 +416,11 @@
                       class="team__contacts__link link"
                       aria-label="twitter"
                     >
-                      <svg class="team__contacts__social" width="20px" height="20px">
+                      <svg
+                        class="team__contacts__social"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
@@ -367,7 +434,11 @@
                       class="team__contacts__link link"
                       aria-label="facebook"
                     >
-                      <svg class="team__contacts__social" width="20px" height="20px">
+                      <svg
+                        class="team__contacts__social"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
@@ -381,7 +452,11 @@
                       class="team__contacts__link link"
                       aria-label="linkedin"
                     >
-                      <svg class="team__contacts__social" width="20px" height="20px">
+                      <svg
+                        class="team__contacts__social"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -411,7 +486,11 @@
                       class="team__contacts__link link"
                       aria-label="instagram"
                     >
-                      <svg class="team__contacts__social" width="20px" height="20px">
+                      <svg
+                        class="team__contacts__social"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
@@ -425,7 +504,11 @@
                       class="team__contacts__link link"
                       aria-label="twitter"
                     >
-                      <svg class="team__contacts__social" width="20px" height="20px">
+                      <svg
+                        class="team__contacts__social"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
@@ -439,7 +522,11 @@
                       class="team__contacts__link link"
                       aria-label="facebook"
                     >
-                      <svg class="team__contacts__social" width="20px" height="20px">
+                      <svg
+                        class="team__contacts__social"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
@@ -453,7 +540,11 @@
                       class="team__contacts__link link"
                       aria-label="linkedin"
                     >
-                      <svg class="team__contacts__social" width="20px" height="20px">
+                      <svg
+                        class="team__contacts__social"
+                        width="20px"
+                        height="20px"
+                      >
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -516,15 +607,15 @@
       </section>
     </main>
     <!--Подвал-->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer__content">
           <div class="footer__address-block">
             <a class="link logo" href="index.html"
               >Web<span class="studio-white">Studio</span></a
-            >
+            > -->
             <!--Адрес-->
-            <address class="footer__address">
+            <!-- <address class="footer__address">
               <ul class="list">
                 <li class="address-white">г. Киев, пр-т Леси Украинки, 26</li>
                 <li class="footer-mail">
@@ -537,9 +628,9 @@
                 </li>
               </ul>
             </address>
-          </div>
+          </div> -->
           <!--Соцсети-->
-          <div class="connect">
+          <!-- <div class="connect">
             <p class="connect__call">присоединяйтесь</p>
             <ul class="connect__list list">
               <li>
@@ -595,10 +686,10 @@
                 </a>
               </li>
             </ul>
-          </div>
+          </div> -->
 
           <!--Подписка-->
-          <div class="subscribe">
+          <!-- <div class="subscribe">
             <p class="connect__call">Подпишитесь на рассылку</p>
             <form action="subscribtion">
               <input
@@ -619,7 +710,7 @@
             </form>
           </div>
         </div>
-      </div>
+      </div> -->
       <!--Модальное окно-->
       <div data-modal class="backdrop is-hidden">
         <div class="modal">
@@ -682,7 +773,7 @@
                 id="comment"
                 placeholder="Введите текст"
               ></textarea>
-            </div>
+            </div> -->
             <!--Чекбокс-->
             <div class="chk-div">
               <input
@@ -693,8 +784,7 @@
               />
 
               <label class="chk-lbl" for="checkbox">
-
-                <svg width="11px" height="8px" class="chk">
+                <svg width="12px" height="8px" class="chk">
                   <use href="./images/icons.svg#check"></use>
                 </svg>
 
@@ -702,9 +792,7 @@
                   Соглашаюсь с рассылкой и принимаю
                   <a href="#" class="link-agreement">Условия договора </a>
                 </span>
-
               </label>
-
             </div>
             <button type="submit" class="subscribe__button btn send-btn">
               Отправить
@@ -712,8 +800,9 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

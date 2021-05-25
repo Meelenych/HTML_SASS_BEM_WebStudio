@@ -6,6 +6,15 @@ body {
   color: var(--main-text-cl);
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  outline: 1px solid tomato;
+}
+
+
+
 h1,
 h2,
 h3,
@@ -16,7 +25,8 @@ img {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .link {

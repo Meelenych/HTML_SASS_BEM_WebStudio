@@ -4,6 +4,14 @@
   line-height: 1;
   letter-spacing: 0.02em;
   color: var(--title-cl);
+
+  @media screen and (max-width: 767px) {
+    display: none;    
+  }
+
+  @media screen and (min-width: 768px) {
+    display: inline-flex;    
+  }
 }
  
 .menu__item:not(:last-child) {
