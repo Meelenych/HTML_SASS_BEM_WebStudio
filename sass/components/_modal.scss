@@ -5,9 +5,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #00000033;
   
-  @extend %background-effects;
+  @extend %modal-appear;
 
   overflow-y:scroll;
 }

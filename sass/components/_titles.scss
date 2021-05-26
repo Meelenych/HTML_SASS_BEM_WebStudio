@@ -6,6 +6,10 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--alt-text-cl);
+
+  @media screen and (max-width: 767px) {
+    font-size: 26px;    
+  }
 }
 
 .advantages__title {

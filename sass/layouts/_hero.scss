@@ -15,11 +15,9 @@
       var(--hero-grdnt),
       var(--hero-grdnt)),
       url("../images/mobile/herobg.jpg");
-    max-width: 100%;
+    max-height: 400px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
- 
+    background-size:contain;
   }
-
 }
