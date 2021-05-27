@@ -394,8 +394,10 @@ textarea {
 }
 
 .send-btn {
-  margin-right: 124px;
-  margin-left: 124px;
+  display: block;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*Кнопка мобильного меню*/
@@ -596,7 +598,7 @@ textarea {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 528px;
-  height: 581px;
+  height: auto;
   max-height: 100%;
   max-width: 100%;
   color: var(--main-text-cl);
@@ -624,6 +626,7 @@ textarea {
           box-sizing: border-box;
   border-radius: 4px;
   padding-left: 42px;
+  width: 100%;
 }
 
 .modal__input-icon {

@@ -106,8 +106,10 @@
 }
 
 .send-btn {
-  margin-right: 124px;
-  margin-left: 124px;
+ display: block;
+ margin: 0;
+ margin-left: auto;
+ margin-right: auto;
 }
 
 /*Кнопка мобильного меню*/
