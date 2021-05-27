@@ -27,45 +27,143 @@
           <a class="header__logo link logo" href="index.html"
             >Web<span class="studio-black logo">Studio</span></a
           >
+          <!--Меню навигации-->
           <ul class="menu list">
             <li class="menu__item">
-              <a class="link" href="index.html">Студия</a>
+              <a class="link current" href="index.html">Студия</a>
             </li>
             <li class="menu__item">
-              <a class="link current" href="portfolio.html">Портфолио</a>
+              <a class="link" href="portfolio.html">Портфолио</a>
             </li>
             <li class="menu__item">
               <a class="link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
+          <!--Контакты в хедере-->
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a class="contacts__link link" href="mailto:info@devstudio.com">
+              <svg class="contacts__svg" width="16px" height="12px">
+                <use href="./images/icons.svg#icon-envelope-hover"></use></svg
+              >info@devstudio.com
+            </a>
+          </li>
 
-          <ul class="contacts list">          
-            <li class="contacts__item">
-              <a class="contacts__link link" href="mailto:info@devstudio.com">
-                <svg
-                  class="contacts__svg"
-                  width="16px"
-                  height="12px"
-                >
-                  <use href="./images/icons.svg#icon-envelope-hover"></use>
-                </svg>info@devstudio.com
-              </a>           
-            </li>
+          <li class="contacts__item">
+            <a class="contacts__link link" href="tel:+380961111111">
+              <svg class="contacts__svg" width="10px" height="16px">
+                <use href="./images/icons.svg#icon-phone"></use></svg
+              >+38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+        
+          <!--Кнопка мобильного меню-->
+           <button 
+           type="button" 
+           class="mob-btn" 
+           aria-expanded="false"
+           aria-controls="mob-menu"
+           data-menu-button>
 
-            <li class="contacts__item">        
-              <a class="contacts__link link" href="tel:+380961111111">
-                <svg
-                  class="contacts__svg"
-                  width="10px"
-                  height="16px"
-                >
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>+38 096 111 11 11
-              </a>            
-            </li>
-          </ul>
-      </div>
+           <svg
+             width="40"
+             height="40"
+             aria-label="Закрыть мобильное меню"
+             class="cross-icon"
+           >
+             <use href="./images/icons.svg#cross"></use>
+           </svg>
+
+           <svg
+             width="40"
+             height="40"
+             aria-label="Открыть мобильное меню"
+             class="burger-icon"
+           >
+             <use href="./images/icons.svg#burger"></use>
+           </svg>
+         </button>
+         <!--Контент мобильного меню-->
+          <div 
+           class="mob-menu-content" 
+           id="mob-menu" 
+           data-menu>
+            <div class="mob-menu-top-content">
+              <ul class="mob-menu-content__list list">
+                <li class="mob-menu-content__nav">
+                  <a class="link" href="index.html">Студия</a>
+                </li>
+                <li class="mob-menu-content__nav">
+                  <a class="link" href="portfolio.html">Портфолио</a>
+                </li>
+                <li class="mob-menu-content__nav">
+                  <a class="link" href="">Контакты</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mob-menu-bottom-content">
+          
+              <p class="mob-menu-content__phone">
+                <a class="link" href="tel:+380961111111">
+                  +38 096 111 11 11
+                </a>
+              </p>
+              <p class="mob-menu-content__email">
+                <a class="link" href="mailto:info@devstudio.com">
+                info@devstudio.com
+                </a>
+              </p>               
+            
+
+              <ul class="mob-menu-content__social-list list">
+              <li>
+                
+                <button class="mob-menu-content__social" type="button"><a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener nofollower"
+                  class="link"
+                  aria-label="instagram"
+                >Instagram
+                </a></button>
+                
+              </li>
+              <li>
+                <button class="mob-menu-content__social" type="button"><a
+                  href="https://www.twitter.com/"
+                  target="_blank"
+                  rel="noopener nofollower"
+                  class="link"
+                  aria-label="twitter"
+                >Twitter                  
+                </a></button>
+              </li>
+              <li>
+                <button class="mob-menu-content__social" type="button"><a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener nofollower"
+                  class="link"
+                  aria-label="facebook"
+                >Facebook                  
+                </a></button
+              </li>
+              <li>
+                <button class="mob-menu-content__social" type="button"><a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener nofollower"
+                  class="link"
+                  aria-label="linkedin"
+                >LinkedIn                  
+                </a></button>
+              </li>
+              </ul>
+            </div>
+         </div>
     </header>
     <main>
       <!-- Примеры работ -->
@@ -362,5 +460,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

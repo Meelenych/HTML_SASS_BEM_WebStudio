@@ -59,6 +59,17 @@
     
   }
 
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+  }
+
 }
 
 @keyframes scale {
@@ -111,17 +122,30 @@
     display: none;
   }
 
-  & .is-open .cross-icon {
-    display: block;    
+  &.is-open .cross-icon {
+    display: block; 
+    position: relative;
+
+    top: 0px;  
+    right: 0px; 
+
+    z-index: 100;
   }
 
-  & .is-open .burger-icon {
+  &.is-open .burger-icon {
     display: none;
   }
 
   @media screen and (min-width: 767px) {
     display: none;    
   }
+
+  & :hover .cross-icon, .burger-icon, 
+    :focus .cross-icon, .burger-icon{
+      fill: var(--accent-cl);
+
+      @extend %fill-effects;
+    }
 }
 
 

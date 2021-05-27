@@ -12,6 +12,12 @@
     display: inline-flex;   
     flex-direction: column; 
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+  }
+
 }
   
 .contacts__item:not(:last-child) {

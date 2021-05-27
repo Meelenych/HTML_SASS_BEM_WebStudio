@@ -3,15 +3,17 @@
   flex-wrap: wrap;
   margin-right: -30px;
   margin-top: -30px;
+  justify-content: center;
 }
   
 .clients__item {
   margin-right: 30px;
   margin-top: 30px;
   justify-content: center;
+  align-items: center;
 
-  @media screen and (max-width: 767px) {
-    flex-basis: calc(100% / 2 - 30px);
+  @media screen and (min-width: 480px) {
+    flex-basis: calc((100% - 30px*2) / 2);
     }
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 3 - 30px);
