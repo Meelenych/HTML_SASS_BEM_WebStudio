@@ -1362,6 +1362,7 @@ input:invalid {
   .footer__address-block {
     text-align: left;
     margin-right: 0;
+    width: 220px;
   }
 }
 
@@ -1391,6 +1392,7 @@ input:invalid {
 @media screen and (min-width: 1200px) {
   .footer__address {
     text-align: left;
+    width: auto;
   }
 }
 
@@ -1539,6 +1541,7 @@ input:invalid {
   .subscribe {
     display: block;
     margin: 0;
+    width: 570px;
   }
 }
 
