@@ -7,13 +7,13 @@
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
     justify-content: flex-start;
+    margin-bottom: 25px;
   }
-
-
 }
 
 .portfolio__filter > li {
   margin-right: 8px;
+  padding-bottom: 15px;
 }
  
 .portfolio__filter:last-child {

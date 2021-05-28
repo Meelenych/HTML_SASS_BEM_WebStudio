@@ -73,10 +73,10 @@ input:focus, textarea:focus {
 }
 
 .backdrop {
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
-  -webkit-transition-duration: 2500ms;
-          transition-duration: 2500ms;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 25000ms;
+          transition-duration: 25000ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -701,11 +701,12 @@ label {
 
 .chk {
   position: absolute;
-  top: 50%;
-  -webkit-transform: translatey(-50%);
-          transform: translatey(-50%);
-  left: 15px;
+  top: 3px;
+  left: auto;
   fill: var(--alt-text-cl);
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 
 .chk-lbl {
@@ -721,7 +722,7 @@ label {
   display: -ms-flexbox;
   display: flex;
   content: "";
-  width: 16px;
+  min-width: 16px;
   height: 15px;
   border: 2px solid var(--title-cl);
   border-radius: 2px;
@@ -1654,6 +1655,12 @@ input:invalid {
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 767px) {
+  .portfolio {
+    padding-top: 60px;
+  }
+}
+
 /*Фильтры*/
 .portfolio__filter {
   display: -webkit-box;
@@ -1672,11 +1679,13 @@ input:invalid {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    margin-bottom: 25px;
   }
 }
 
 .portfolio__filter > li {
   margin-right: 8px;
+  padding-bottom: 15px;
 }
 
 .portfolio__filter:last-child {
@@ -1732,6 +1741,9 @@ input:invalid {
 
 @media screen and (min-width: 768px) {
   .projects__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-preferred-size: calc(100% / 2 - 30px);
         flex-basis: calc(100% / 2 - 30px);
   }
@@ -1739,6 +1751,7 @@ input:invalid {
 
 @media screen and (min-width: 1200px) {
   .projects__item {
+    display: block;
     -ms-flex-preferred-size: calc(100% / 3 - 30px);
         flex-basis: calc(100% / 3 - 30px);
   }
@@ -1777,12 +1790,20 @@ input:invalid {
   border-top: none;
 }
 
+@media screen and (max-width: 767px) {
+  .projects__label {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+
 .projects__overlay {
   display: none;
   position: absolute;
   background: var(--prj-overlay);
-  width: 370px;
-  height: 294px;
+  width: 100%;
+  height: 100%;
   -webkit-transform: translatey(100%);
           transform: translatey(100%);
   -webkit-transition: -webkit-transform 250ms ease;

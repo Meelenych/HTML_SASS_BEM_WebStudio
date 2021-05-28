@@ -81,11 +81,11 @@ label {
 }
      
 .chk {
-  position: absolute;
-  top: 50%;
-  transform: translatey(-50%);
-  left: 15px;
+  position:absolute;
+  top: 3px;
+  left: auto;
   fill: var(--alt-text-cl);
+  min-width: fit-content;
 }
  
 .chk-lbl {
@@ -96,8 +96,9 @@ label {
   &::before {
     display: flex;
     content: "";
-    width: 16px;
+    min-width: 16px;
     height: 15px;
+
     border: 2px solid var(--title-cl);
     border-radius: 2px;
     margin-right: 6px;

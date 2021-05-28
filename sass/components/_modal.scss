@@ -6,10 +6,9 @@
   width: 100%;
   height: 100%;
   background-color: #00000033;
-  
-  @extend %modal-appear;
-
   overflow-y:scroll;
+
+  @extend %modal-appear;
 }
   
 .modal {
@@ -27,7 +26,7 @@
   0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
-}
+ }
   
 .modal__close-svg {
   fill: var(--logo-black);
