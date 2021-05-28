@@ -1,23 +1,35 @@
 .hero--background{
   background: var(--dark-bg);
-  background-image: linear-gradient(
-    to bottom,
-    var(--hero-grdnt),
-    var(--hero-grdnt)),
-    url("../images/herobg.jpg");
   max-width: 100%;
   background-repeat: no-repeat;
   background-position: center;
+  background-size:cover;
 
   @media screen and (max-width: 767px) {
     background-image: linear-gradient(
       to bottom,
       var(--hero-grdnt),
       var(--hero-grdnt)),
-      url("../images/mobile/herobg.jpg");
+      url("../images/mobile/hero@2x.jpg");
     max-height: 400px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:contain;
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+      to bottom,
+      var(--hero-grdnt),
+      var(--hero-grdnt)),
+      url("../images/tablet/hero@2x.jpg");
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+      to bottom,
+      var(--hero-grdnt),
+      var(--hero-grdnt)),
+      url("../images/desktop/hero@2x.jpg");
   }
 }
+
+
+

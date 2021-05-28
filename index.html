@@ -120,47 +120,42 @@
             
 
               <ul class="mob-menu-content__social-list list">
-              <li>
-                
-                <button class="mob-menu-content__social" type="button"><a
+              <li class="mob-menu-content__social"><a
                   href="https://www.instagram.com/"
                   target="_blank"
                   rel="noopener nofollower"
                   class="link"
                   aria-label="instagram"
                 >Instagram
-                </a></button>
+                </a>
                 
               </li>
-              <li>
-                <button class="mob-menu-content__social" type="button"><a
+              <li class="mob-menu-content__social"><a
                   href="https://www.twitter.com/"
                   target="_blank"
                   rel="noopener nofollower"
                   class="link"
                   aria-label="twitter"
                 >Twitter                  
-                </a></button>
+                </a>
               </li>
-              <li>
-                <button class="mob-menu-content__social" type="button"><a
+              <li class="mob-menu-content__social"><a
                   href="https://www.facebook.com/"
                   target="_blank"
                   rel="noopener nofollower"
                   class="link"
                   aria-label="facebook"
                 >Facebook                  
-                </a></button
+                </a>
               </li>
-              <li>
-                <button class="mob-menu-content__social last-of-us" type="button"><a
+              <li class="mob-menu-content__social"><a
                   href="https://www.linkedin.com/"
                   target="_blank"
                   rel="noopener nofollower"
                   class="link"
                   aria-label="linkedin"
                 >LinkedIn                  
-                </a></button>
+                </a>
               </li>
               </ul>
             </div>
@@ -242,23 +237,59 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="activities__list list">
             <li class="activities__item">
-              <img
-                src="./images/pc.jpg"
-                alt="персональный компьютер"
-                width="370"
-              />
+              <!--персональный компьютер-->
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/pc@1x.jpg 1x, 
+                    ./images/desktop/pc@2x.jpg 2x "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/desktop/pc@1x.jpg" width="370" alt="персональный компьютер" />
+              </picture>
+
+              <!-- <img  src="./images/pc.jpg"  alt="персональный компьютер" width="370" /> -->
+
               <div class="activities--gradient">
                 <p class="activities__name">Десктопные приложения</p>
               </div>
             </li>
             <li class="activities__item">
-              <img src="./images/laptop.jpg" alt="ноутбук" width="370" />
+              <!--ноутбук-->
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/laptop@1x.jpg 1x, 
+                    ./images/desktop/laptop@2x.jpg 2x "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/desktop/laptop@1x.jpg" width="370" alt="ноутбук" />
+              </picture>
+
+              <!-- <img src="./images/laptop.jpg" alt="ноутбук" width="370" /> -->
+
               <div class="activities--gradient">
                 <p class="activities__name">Мобильные приложения</p>
               </div>
             </li>
             <li class="activities__item">
-              <img src="./images/tablet.jpg" alt="планшет" width="370" />
+
+               <!--планшет-->
+               <picture>
+                <source
+                  srcset="
+                    ./images/desktop/tablet@1x.jpg 1x, 
+                    ./images/desktop/tablet@2x.jpg 2x "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/desktop/tablet@1x.jpg" width="370" alt="планшет" />
+              </picture>
+             
+              <!-- <img src="./images/tablet.jpg" alt="планшет" width="370" /> -->
+
               <div class="activities--gradient">
                 <p class="activities__name">Дизайнерские решения</p>
               </div>
@@ -271,12 +302,32 @@
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team__list list">
-            <li class="team__card">
-              <img
-                class="team__photo"
-                src="./images/igor.jpg"
-                alt="Игорь Демьяненко"
-              />
+            <!--Игорь Демьяненко-->
+            <li class="team__card">              
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/igor@1x.jpg 1x, 
+                    ./images/desktop/igor@2x.jpg 2x "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/tablet/igor@1x.jpg 1x, 
+                          ./images/tablet/igor@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />              
+                <source
+                  srcset="./images/mobile/igor@1x.jpg 1x, 
+                          ./images/mobile/igor@2x.jpg 2x"
+                  media="(max-width: 767.98px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/desktop/igor@1x.jpg" alt="Игорь Демьяненко" />
+              </picture>
+
+              <!-- <img class="team__photo" src="./images/igor.jpg" alt="Игорь Демьяненко"/> -->
 
               <div class="team__text">
                 <h3 class="team__name">Игорь Демьяненко</h3>
@@ -359,13 +410,33 @@
                 </ul>
               </div>
             </li>
-
+            <!--Ольга Репина-->
             <li class="team__card">
-              <img
-                class="team__photo"
-                src="./images/olga.jpg"
-                alt="Ольга Репина"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/olga@1x.jpg 1x, 
+                    ./images/desktop/olga@2x.jpg 2x "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/tablet/olga@1x.jpg 1x, 
+                          ./images/tablet/olga@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />              
+                <source
+                  srcset="./images/mobile/olga@1x.jpg 1x, 
+                          ./images/mobile/olga@2x.jpg 2x"
+                  media="(max-width: 767.98px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/desktop/olga@1x.jpg" alt="Ольга Репина" />
+              </picture>
+
+              <!-- <img class="team__photo" src="./images/olga.jpg" alt="Ольга Репина"/> -->
+
               <div class="team__text">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__position">Frontend Developer</p>
@@ -447,13 +518,33 @@
                 </ul>
               </div>
             </li>
-
+            <!--Николай Тарасов-->
             <li class="team__card">
-              <img
-                class="team__photo"
-                src="./images/nick.jpg"
-                alt="Николай Тарасов"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/nick@1x.jpg 1x, 
+                    ./images/desktop/nick@2x.jpg 2x "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/tablet/nick@1x.jpg 1x, 
+                          ./images/tablet/nick@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />              
+                <source
+                  srcset="./images/mobile/nick@1x.jpg 1x, 
+                          ./images/mobile/nick@2x.jpg 2x"
+                  media="(max-width: 767.98px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/desktop/nick@1x.jpg" alt="Николай Тарасов" />
+              </picture>
+
+              <!-- <img class="team__photo" src="./images/nick.jpg" alt="Николай Тарасов"/> -->
+
               <div class="team__text">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__position">Marketing</p>
@@ -535,13 +626,33 @@
                 </ul>
               </div>
             </li>
-
+            <!--Михаил Ермаков-->
             <li class="team__card">
-              <img
-                class="team__photo"
-                src="./images/mike.jpg"
-                alt="Михаил Ермаков"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/mike@1x.jpg 1x, 
+                    ./images/desktop/mike@2x.jpg 2x "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/tablet/mike@1x.jpg 1x, 
+                          ./images/tablet/mike@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />              
+                <source
+                  srcset="./images/mobile/mike@1x.jpg 1x, 
+                          ./images/mobile/mike@2x.jpg 2x"
+                  media="(max-width: 767.98px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/desktop/mike@1x.jpg" alt="Михаил Ермаков" />
+              </picture>
+              
+              <!-- <img class="team__photo" src="./images/mike.jpg" alt="Михаил Ермаков"/> -->
+
               <div class="team__text">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__position">UI Designer</p>
@@ -851,6 +962,7 @@
                 type="checkbox"
                 name="user-checkbox"
                 id="checkbox"
+                required
               />
 
               <label class="chk-lbl" for="checkbox">
