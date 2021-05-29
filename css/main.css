@@ -130,6 +130,10 @@ body {
   color: var(--main-text-cl);
 }
 
+body.overflow-is-hidden {
+  overflow: hidden;
+}
+
 /*Временное выделение*/
 /*=======================*/
 h1,
