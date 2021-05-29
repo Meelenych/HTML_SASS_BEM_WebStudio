@@ -49,13 +49,15 @@
  
 .connect__list {
   display: inline-flex;
-
   @media screen and (max-width: 767px) {
     justify-content: center;
   }
+}
 
-
-
+.connect__list>li {
+  &:not(:last-child){
+    margin-right: 10px;
+  }
 }
     
 .connect__link {
@@ -65,7 +67,6 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  margin-right: 10px;
   background-color: var(--connect-cl);
 
   &:hover,

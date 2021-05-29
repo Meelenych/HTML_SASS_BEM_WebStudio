@@ -1225,6 +1225,10 @@ input:invalid {
   display: inline-flex;
 }
 
+.team__contacts__list > li:not(:last-child) {
+  margin-right: 10px;
+}
+
 .team__contacts__social {
   fill: var(--clients-cl);
 }
@@ -1242,7 +1246,6 @@ input:invalid {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  margin-right: 10px;
   background-color: var(--connect-cl);
 }
 
@@ -1582,6 +1585,10 @@ input:invalid {
   }
 }
 
+.connect__list > li:not(:last-child) {
+  margin-right: 10px;
+}
+
 .connect__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1595,7 +1602,6 @@ input:invalid {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  margin-right: 10px;
   background-color: var(--connect-cl);
 }
 

@@ -5,7 +5,13 @@
 }
   
 .team__contacts__list {
-  display: inline-flex;
+  display: inline-flex; 
+}
+
+.team__contacts__list>li {
+  &:not(:last-child){
+    margin-right: 10px;
+  }
 }
   
 .team__contacts__social {
@@ -13,7 +19,6 @@
 
   @extend %fill-effects;
   @extend %background-effects;
-
 }
 
 .team__contacts__link {
@@ -23,9 +28,9 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  margin-right: 10px;
   background-color: var(--connect-cl);
   
+    
   &:hover,
   &:focus {
     background-color: var(--accent-cl);
