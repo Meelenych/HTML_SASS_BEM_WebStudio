@@ -4,7 +4,6 @@
   color: --foot-txt;
   padding-top: 60px;
 
-
   @media screen and (max-width: 767px) {
     height: 100%;
     padding-left: 10px;
@@ -26,14 +25,14 @@
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
     align-items: center;
-
   }
   @media screen and (min-width: 768px) {
     flex-wrap: wrap;
     justify-content: center;
   }
   @media screen and (min-width: 1200px) {
-   justify-content:space-between; 
+   width: 1200px;
+   justify-content: start;
   }
 }
 
@@ -56,12 +55,10 @@
 
   @media screen and (min-width: 1200px) {
     text-align: left;
-    margin-right: 0;
+    margin-right: 70px;
     width: 220px;
   }
-
 }
-
 
 .address-white {
   color: var(--alt-text-cl);
