@@ -128,10 +128,8 @@
   &.is-open .cross-icon {
     display: block; 
     position: relative;
-
     top: 0px;  
     right: 0px; 
-
     z-index: 100;
   }
 
@@ -143,12 +141,20 @@
     display: none;    
   }
 
-  & :hover .cross-icon, .burger-icon, 
-    :focus .cross-icon, .burger-icon{
+  & :hover .burger-icon, 
+    :focus .burger-icon{
       fill: var(--accent-cl);
 
       @extend %fill-effects;
     }
+
+  & :hover .cross-icon, 
+    :focus .cross-icon {
+      fill: var(--accent-cl);
+
+      @extend %fill-effects;
+    }
+
 }
 
 

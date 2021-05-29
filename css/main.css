@@ -42,7 +42,8 @@
 }
 
 .modal__close-btn :hover .modal__close-svg,
-.modal__close-btn :focus .modal__close-svg, .mob-btn :hover .cross-icon, .mob-btn .burger-icon,
+.modal__close-btn :focus .modal__close-svg, .mob-btn :hover .burger-icon,
+.mob-btn :focus .burger-icon, .mob-btn :hover .cross-icon,
 .mob-btn :focus .cross-icon, input:focus + .modal__input-icon, .team__contacts__social {
   -webkit-transition-property: fill;
   transition-property: fill;
@@ -130,6 +131,14 @@ body {
 }
 
 /*Временное выделение*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  outline: 1px solid olivedrab;
+}
+
 /*=======================*/
 h1,
 h2,
@@ -141,7 +150,7 @@ img {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -215,16 +224,16 @@ textarea {
 }
 
 .container {
-  width: 100%;
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -237,10 +246,6 @@ textarea {
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -434,8 +439,13 @@ textarea {
   }
 }
 
-.mob-btn :hover .cross-icon, .mob-btn .burger-icon,
-.mob-btn :focus .cross-icon, .mob-btn .burger-icon {
+.mob-btn :hover .burger-icon,
+.mob-btn :focus .burger-icon {
+  fill: var(--accent-cl);
+}
+
+.mob-btn :hover .cross-icon,
+.mob-btn :focus .cross-icon {
   fill: var(--accent-cl);
 }
 
@@ -973,7 +983,7 @@ input:invalid {
 
 .hero--background {
   background: var(--dark-bg);
-  max-width: 100%;
+  width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1601,8 +1611,6 @@ input:invalid {
             justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
   }
 }
 
