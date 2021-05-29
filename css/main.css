@@ -131,14 +131,6 @@ body {
 }
 
 /*Временное выделение*/
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-  outline: 1px solid olivedrab;
-}
-
 /*=======================*/
 h1,
 h2,
