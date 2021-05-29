@@ -177,6 +177,10 @@ img {
   top: 32px;
 }
 
+.active {
+  color: var(--accent-cl);
+}
+
 .list {
   list-style: none;
   margin: 0;
