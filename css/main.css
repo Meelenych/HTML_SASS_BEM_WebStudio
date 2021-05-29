@@ -1368,7 +1368,6 @@ input:invalid {
 @media screen and (max-width: 767px) {
   .footer {
     height: 100%;
-    width: 100%;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -1377,7 +1376,6 @@ input:invalid {
 @media screen and (min-width: 768px) {
   .footer {
     height: 100%;
-    width: 100%;
   }
 }
 
