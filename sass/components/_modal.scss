@@ -26,6 +26,8 @@
   0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+
+  @extend %modal-appear;
  }
   
 .modal__close-svg {

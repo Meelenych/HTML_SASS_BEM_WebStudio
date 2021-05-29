@@ -72,11 +72,11 @@ input:focus, textarea:focus {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop {
+.backdrop, .modal {
   -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 25000ms;
-          transition-duration: 25000ms;
+  -webkit-transition-duration: 2500ms;
+          transition-duration: 2500ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -368,6 +368,7 @@ textarea {
   }
 }
 
+/*Кнопка закрытия модалки*/
 .modal__close-btn {
   position: absolute;
   top: 8px;
@@ -1318,6 +1319,8 @@ input:invalid {
   .footer {
     height: 100%;
     width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -1598,6 +1601,8 @@ input:invalid {
             justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
