@@ -135,6 +135,12 @@ body.overflow-is-hidden {
 }
 
 /*Временное выделение*/
+*,
+*::before,
+*::after {
+  outline: 1px solid olivedrab;
+}
+
 /*=======================*/
 h1,
 h2,
@@ -1450,7 +1456,6 @@ input:invalid {
 
 @media screen and (min-width: 1200px) {
   .footer__content {
-    width: 1200px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
@@ -1662,7 +1667,7 @@ input:invalid {
 @media screen and (min-width: 1200px) {
   .subscribe {
     margin-top: 0;
-    margin-left: auto;
+    margin-left: 93px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
