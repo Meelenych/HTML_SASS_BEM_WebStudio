@@ -135,12 +135,6 @@ body.overflow-is-hidden {
 }
 
 /*Временное выделение*/
-*,
-*::before,
-*::after {
-  outline: 1px solid olivedrab;
-}
-
 /*=======================*/
 h1,
 h2,
