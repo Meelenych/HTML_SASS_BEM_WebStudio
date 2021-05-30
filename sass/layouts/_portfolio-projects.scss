@@ -77,7 +77,6 @@
 }
   
 .projects__overlay {
-  display: none;
   position: absolute;
   background: var(--prj-overlay);
   width: 100%;
@@ -92,6 +91,11 @@
   padding-left: 24px;
   padding-right: 24px;
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+  }
+  
 }
 
 .projects__overflow {
