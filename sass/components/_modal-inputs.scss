@@ -78,13 +78,15 @@ label {
   margin-bottom: 30px;
 }
      
-.chk {
-  position:absolute;
-  top: 3px;
-  left: auto;
-  fill: var(--alt-text-cl);
-  min-width: fit-content;
-}
+// .chk {
+//   position:absolute;
+//   top: 3px;
+//   left: auto;
+//   fill: var(--alt-text-cl);
+//   min-width: fit-content;
+//   outline: 1px solid olivedrab;
+  
+// }
  
 .chk-lbl {
   display: flex;
@@ -99,7 +101,7 @@ label {
 
     border: 2px solid var(--title-cl);
     border-radius: 2px;
-    margin-right: 6px;
+    margin-right: 7px;
   }
 }
 
@@ -107,6 +109,12 @@ label {
   background-color: var(--accent-cl);
   border: 2px solid var(--accent-cl);
   border-radius: 2px;
+  
+  background-image: url("../images/icons.svg#check");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  fill: var(--alt-text-cl);
 }
 
 /*Валидация форм*/

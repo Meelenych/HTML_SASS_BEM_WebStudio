@@ -7,7 +7,8 @@
   height: 100%;
   background-color: #00000033;
   overflow-y:scroll;
-
+  opacity: 1;
+ 
   @extend %modal-appear;
 }
   
@@ -18,7 +19,6 @@
   transform: translate(-50%, -50%);
   width: 528px;
   height: auto;
-  max-height: 100%;
   max-width: 100%;
   color: var(--main-text-cl);
   background-color: var(--alt-text-cl);
@@ -26,7 +26,7 @@
   0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
-
+  
   @extend %modal-appear;
  }
   
